@@ -7,35 +7,55 @@ import { Button } from "@/components/ui/button"
 export default function SocialFloatingButton() {
     const [isOpen, setIsOpen] = useState(false)
 
+    // Custom TikTok Icon
+    const TikTokIcon = ({ size = 20 }: { size?: number }) => (
+        <svg
+            width={size}
+            height={size}
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            stroke="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+        </svg>
+    )
+
     const socialLinks = [
         {
             name: "WhatsApp",
             icon: <MessageCircle size={20} />,
-            href: "https://wa.me/224000000000", // Replace with actual number
+            href: "https://wa.me/224620461512",
             color: "bg-[#25D366] hover:bg-[#20bd5a]",
+        },
+        {
+            name: "TikTok",
+            icon: <TikTokIcon size={20} />,
+            href: "https://www.tiktok.com/@fadidia.fruits?_r=1&_t=ZM-92HL2OmqlrQ",
+            color: "bg-[#000000] hover:bg-[#333333]",
         },
         {
             name: "Instagram",
             icon: <Instagram size={20} />,
-            href: "https://instagram.com",
+            href: "https://www.instagram.com/fadidiafruits?igsh=MWMwM3IwcDJjMXFnNw%3D%3D&utm_source=qr",
             color: "bg-[#E1306C] hover:bg-[#c92b60]",
         },
         {
             name: "Facebook",
             icon: <Facebook size={20} />,
-            href: "https://facebook.com",
+            href: "https://www.facebook.com/share/17fKjLcDyX/?mibextid=wwXIfr",
             color: "bg-[#1877F2] hover:bg-[#166fe5]",
         },
         {
             name: "Appeler",
             icon: <Phone size={20} />,
-            href: "tel:+224000000000",
+            href: "tel:+224620461512",
             color: "bg-green-600 hover:bg-green-700",
         },
         {
             name: "Email",
             icon: <Mail size={20} />,
-            href: "mailto:contact@fadidia.com",
+            href: "mailto:fadidiafruitsetlegumes@gmail.com",
             color: "bg-orange-500 hover:bg-orange-600",
         },
     ]
