@@ -1,0 +1,252 @@
+{
+    "epices": [
+        {
+            "name": "Poudre Curcuma",
+            "path": "public/epices/poudre_curcuma.png"
+        },
+        {
+            "name": "Poudre Gingembre",
+            "path": "public/epices/poudre_gingembre.png"
+        },
+        {
+            "name": "Poudre Poivron noir",
+            "path": "public/epices/poudre_poivron_noir.png"
+        },
+        {
+            "name": "Poudre de paprika",
+            "path": "public/epices/poudre_de_paprika.png"
+        },
+        {
+            "name": "Poudre de cannelle",
+            "path": "public/epices/poudre_de_cannelle.png"
+        },
+        {
+            "name": "Sel de citron",
+            "path": "public/epices/sel_de_citron.png"
+        }
+    ],
+    "legumes": [
+        {
+            "name": "Concombre",
+            "path": "public/legumes/concombre_1.png"
+        },
+        {
+            "name": "Pomme de terre",
+            "path": "public/legumes/pomme_de_terre.png"
+        },
+        {
+            "name": "Betterave",
+            "path": "public/legumes/betterave_1.png"
+        },
+        {
+            "name": "Patate douce",
+            "path": "public/legumes/patate_douce.png"
+        }
+    ],
+    "fruits": [
+        {
+            "name": "Grenadine",
+            "path": "public/fruit/grenadine_1.png"
+        },
+        {
+            "name": "Mandarine",
+            "path": "public/fruit/mandarine_1.png"
+        },
+        {
+            "name": "Cerise",
+            "path": "public/fruit/cerise_1.png"
+        },
+        {
+            "name": "Fruit de la Passion",
+            "path": "public/fruit/fruit_de_la_passion.png"
+        },
+        {
+            "name": "Soursop",
+            "path": "public/fruit/soursop_1.png"
+        },
+        {
+            "name": "Abricot",
+            "path": "public/fruit/abricot_1.png"
+        },
+        {
+            "name": "Pomme",
+            "path": "public/fruit/pomme_1.png"
+        },
+        {
+            "name": "Poire",
+            "path": "public/fruit/poire_1.png"
+        },
+        {
+            "name": "Orange",
+            "path": "public/fruit/orange_1.png"
+        },
+        {
+            "name": "Papaye local",
+            "path": "public/fruit/papaye_local.png"
+        },
+        {
+            "name": "Fraise 250g",
+            "path": "public/fruit/fraise_250g.png"
+        },
+        {
+            "name": "Figue",
+            "path": "public/fruit/figue_1.png"
+        },
+        {
+            "name": "Mangue",
+            "path": "public/fruit/mangue_1.jpg"
+        },
+        {
+            "name": "Coin",
+            "path": "public/fruit/coing.png"
+        },
+        {
+            "name": "Pastèque",
+            "path": "public/fruit/pasteque.png"
+        },
+        {
+            "name": "Fraise 400g",
+            "path": "public/fruit/fraise_400g.png"
+        },
+        {
+            "name": "Coco",
+            "path": "public/fruit/coco_1.jpg"
+        },
+        {
+            "name": "Papaye importé",
+            "path": "public/fruit/papaye_importe.png"
+        },
+        {
+            "name": "Kaki",
+            "path": "public/fruit/kaki_1.png"
+        },
+        {
+            "name": "Fruit de dragon",
+            "path": "public/fruit/fruit_de_dragon.png"
+        },
+        {
+            "name": "Jamblon",
+            "path": "public/fruit/jamblon_1.png"
+        },
+        {
+            "name": "Prune",
+            "path": "public/fruit/prune_1.png"
+        },
+        {
+            "name": "Avocat importé",
+            "path": "public/fruit/avocat.png"
+        },
+        {
+            "name": "Kiwi",
+            "path": "public/fruit/kiwi_1.png"
+        },
+        {
+            "name": "Nectarine",
+            "path": "public/fruit/nectarine_1.png"
+        },
+        {
+            "name": "Melon",
+            "path": "public/fruit/melon_1.png"
+        },
+        {
+            "name": "Ananas",
+            "path": "public/fruit/ananas_1.png"
+        },
+        {
+            "name": "Goyave importé",
+            "path": "public/fruit/goyave_importe.png"
+        },
+        {
+            "name": "Raisin vert",
+            "path": "public/fruit/raisin_vert.png"
+        },
+        {
+            "name": "Banane importé",
+            "path": "public/fruit/banane_importe.png"
+        },
+        {
+            "name": "Goyave local",
+            "path": "public/fruit/goyave_local.png"
+        },
+        {
+            "name": "Avocat local",
+            "path": "public/fruit/avocat_local.png"
+        },
+        {
+            "name": "Citron local",
+            "path": "public/fruit/citron_local.png"
+        },
+        {
+            "name": "Pêche",
+            "path": "public/fruit/peche.png"
+        },
+        {
+            "name": "Raisin rouge",
+            "path": "public/fruit/raisin_rouge.png"
+        }
+    ],
+    "boisson": [
+        {
+            "name": "Boisson non alcoolisé fraise ",
+            "path": "public/Boisson/boisson_non_alcoolise_fraise.png"
+        },
+        {
+            "name": "Boisson non alcoolisé Raisin",
+            "path": "public/Boisson/boisson_non_alcoolise_raisin.png"
+        },
+        {
+            "name": "Boisson non alcoolisé Pomme ",
+            "path": "public/Boisson/boisson_non_alcoolise_pomme.png"
+        },
+        {
+            "name": "Boisson non alcoolisé Mix",
+            "path": "public/boisson/boisson_non_alcoolise_mix.png"
+        }
+    ],
+    "commerce_general": [
+        {
+            "name": "Huile d'olive",
+            "path": "public/commerce_general/huile_d_olive.png"
+        },
+        {
+            "name": "Olive graine",
+            "path": "public/commerce_general/olive_graine.png"
+        },
+        {
+            "name": "Corne boeuf Zwan",
+            "path": "public/commerce_general/corne_boeuf_zwan.png"
+        },
+        {
+            "name": "Corne boeuf Bordon",
+            "path": "public/commerce_general/corne_boeuf_bordon.png"
+        },
+        {
+            "name": "Corn flakes",
+            "path": "public/commerce_general/corn_flakes.png"
+        },
+        {
+            "name": "Trident",
+            "path": "public/commerce_general/trident_1.png"
+        },
+        {
+            "name": "Sirop Menthe",
+            "path": "public/commerce_general/sirop_menthe.png"
+        },
+        {
+            "name": "Pringles",
+            "path": "public/commerce_general/pringles_1.png"
+        },
+        {
+            "name": "Cocktail fruit",
+            "path": "public/commerce_general/cocktail_fruit.png"
+        },
+        {
+            "name": "Nutella",
+            "path": "public/commerce_general/nutella_1.png"
+        },
+        {
+            "name": "Mentos boite, Caramel",
+            "path": "public/commerce_general/mentos_boite_caramel.png"
+        }
+    ]
+}
