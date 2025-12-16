@@ -59,7 +59,7 @@ export default function Testimonials() {
     }
   }, [])
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const newTestimonial = {
       id: testimonials.length + 1,
@@ -95,7 +95,7 @@ export default function Testimonials() {
   const current = testimonials[currentIndex]
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-background to-secondary/10">
+    <section className="pt-20 pb-10 px-4 bg-gradient-to-b from-background to-secondary/10">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -149,9 +149,8 @@ export default function Testimonials() {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-colors duration-200 ${
-                  index === currentIndex ? "bg-primary" : "bg-primary/30 hover:bg-primary/50"
-                }`}
+                className={`w-3 h-3 rounded-full transition-colors duration-200 ${index === currentIndex ? "bg-primary" : "bg-primary/30 hover:bg-primary/50"
+                  }`}
                 aria-label={`Voir avis ${index + 1}`}
               />
             ))}

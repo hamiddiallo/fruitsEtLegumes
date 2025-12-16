@@ -26,7 +26,6 @@ export default function Header() {
     { label: "Accueil", href: "#home" },
     { label: "Jus & Smoothies", href: "#juices" },
     { label: "À propos", href: "#about" },
-    { label: "Contact", href: "#contact" },
   ]
 
   return (
