@@ -6,8 +6,8 @@ import Juices from "@/components/juices"
 import Commitments from "@/components/commitments"
 import Director from "@/components/director"
 import Testimonials from "@/components/testimonials"
-import Contact from "@/components/contact"
 import Footer from "@/components/footer"
+import SocialFloatingButton from "@/components/social-floating-button"
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       <Commitments />
       <Director />
       <Testimonials />
-      <Contact />
+      <SocialFloatingButton />
       <Footer />
     </main>
   )

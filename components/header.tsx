@@ -2,14 +2,28 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
+const categories = [
+  { label: "Épices", value: "epices" },
+  { label: "Légumes", value: "legumes" },
+  { label: "Fruits", value: "fruits" },
+  { label: "Boissons", value: "boisson" },
+  { label: "Commerce Général", value: "commerce_general" },
+]
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false)
 
   const navLinks = [
     { label: "Accueil", href: "#home" },
-    { label: "Produits", href: "#products" },
     { label: "Jus & Smoothies", href: "#juices" },
     { label: "À propos", href: "#about" },
     { label: "Contact", href: "#contact" },
@@ -31,7 +45,26 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
+          <Link href="#home" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            Accueil
+          </Link>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-foreground hover:text-primary transition-colors outline-none">
+              Produits <ChevronDown size={16} />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              {categories.map((category) => (
+                <DropdownMenuItem key={category.value} asChild>
+                  <Link href={`/?category=${category.value}#products`} className="cursor-pointer">
+                    {category.label}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          {navLinks.slice(1).map((link) => (
             <Link
               key={link.label}
               href={link.href}
@@ -50,9 +83,43 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <nav className="lg:hidden border-t border-gray bg-white">
-          <div className="px-4 py-4 space-y-3">
-            {navLinks.map((link) => (
+        <nav className="lg:hidden border-t border-gray bg-white max-h-[80vh] overflow-y-auto">
+          <div className="px-4 py-4 space-y-1">
+            <Link
+              href="#home"
+              className="block py-3 text-sm font-medium text-foreground hover:text-primary transition-colors border-b border-gray/50"
+              onClick={() => setIsOpen(false)}
+            >
+              Accueil
+            </Link>
+
+            <div className="border-b border-gray/50">
+              <button
+                onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
+                className="flex items-center justify-between w-full py-3 text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Produits
+                <ChevronDown size={16} className={`transition-transformDuration-200 ${isMobileProductsOpen ? "rotate-180" : ""}`} />
+              </button>
+
+              {isMobileProductsOpen && (
+                <div className="pl-4 pb-2 space-y-2">
+                  {categories.map((category) => (
+                    <Link
+                      key={category.value}
+                      href={`/?category=${category.value}#products`}
+                      className="block py-2 text-sm text-foreground/70 hover:text-primary transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {category.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {navLinks.slice(1).map((link) => (
+
               <Link
                 key={link.label}
                 href={link.href}
